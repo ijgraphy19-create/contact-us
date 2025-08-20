@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Services - Client Inquiry Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <h1 class="brand">✨ Captured Moments Photography</h1>
+                <p class="tagline">Creating timeless memories through the art of photography</p>
+            </div>
+        </header>
+
+        <!-- Progress Bar -->
+        <div class="progress-container hidden" id="progressContainer">
+            <div class="container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-steps">
+                    <span class="step active" id="step1">Event Type</span>
+                    <span class="step" id="step2">Details</span>
+                    <span class="step" id="step3">Services</span>
+                    <span class="step" id="step4">Review</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Welcome Section -->
+            <section class="section active" id="welcomeSection">
+                <div class="container">
+                    <div class="welcome-content">
+                        <h2>Tell Us About Your Special Event</h2>
+                        <p class="welcome-description">Every moment deserves to be captured with care and artistry. Let us help you preserve your most precious memories with our professional photography services.</p>
+
+                        <div class="event-types-grid">
+                            <div class="event-card" data-event="Wedding">
+                                <span class="event-icon">💍</span>
+                                <h3>Wedding</h3>
+                                <p>Celebrate your special day with timeless photography</p>
+                            </div>
+
+                            <div class="event-card" data-event="Engagement">
+                                <span class="event-icon">💕</span>
+                                <h3>Engagement</h3>
+                                <p>Capture the beginning of your forever</p>
+                            </div>
+
+                            <div class="event-card" data-event="Birthday Party">
+                                <span class="event-icon">🎂</span>
+                                <h3>Birthday Party</h3>
+                                <p>Milestone moments deserve beautiful memories</p>
+                            </div>
+
+                            <div class="event-card" data-event="Naming Ceremony">
+                                <span class="event-icon">👶</span>
+                                <h3>Naming Ceremony</h3>
+                                <p>Welcome your little one with precious photographs</p>
+                            </div>
+
+                            <div class="event-card" data-event="Baby Shower">
+                                <span class="event-icon">🍼</span>
+                                <h3>Baby Shower</h3>
+                                <p>Celebrating new life and beautiful beginnings</p>
+                            </div>
+
+                            <div class="event-card" data-event="Corporate Event">
+                                <span class="event-icon">💼</span>
+                                <h3>Corporate Event</h3>
+                                <p>Professional photography for your business occasions</p>
+                            </div>
+
+                            <div class="event-card" data-event="Concert">
+                                <span class="event-icon">🎵</span>
+                                <h3>Concert/Music Event</h3>
+                                <p>Dynamic photography that captures the energy</p>
+                            </div>
+
+                            <div class="event-card" data-event="House Warming">
+                                <span class="event-icon">🏠</span>
+                                <h3>House Warming</h3>
+                                <p>New beginnings in your beautiful new home</p>
+                            </div>
+
+                            <div class="event-card" data-event="Anniversary">
+                                <span class="event-icon">💐</span>
+                                <h3>Anniversary</h3>
+                                <p>Celebrating your journey of love together</p>
+                            </div>
+
+                            <div class="event-card" data-event="Graduation">
+                                <span class="event-icon">🎓</span>
+                                <h3>Graduation</h3>
+                                <p>Achievement moments that last a lifetime</p>
+                            </div>
+
+                            <div class="event-card" data-event="Family Portrait">
+                                <span class="event-icon">👨‍👩‍👧‍👦</span>
+                                <h3>Family Portrait Session</h3>
+                                <p>Timeless portraits of the people you love most</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Form Section -->
+            <section class="section" id="formSection">
+                <div class="container">
+                    <form id="inquiryForm" class="inquiry-form">
+                        <div class="form-content" id="dynamicContent">
+                            <!-- Dynamic content will be inserted here -->
+                        </div>
+
+                        <div class="form-navigation">
+                            <button type="button" id="prevBtn" class="btn btn-secondary hidden">Previous</button>
+                            <button type="button" id="nextBtn" class="btn btn-primary hidden">Next</button>
+                            <button type="submit" id="submitBtn" class="btn btn-primary hidden">Submit Inquiry</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Thank You Section -->
+            <section class="section" id="thankYouSection">
+                <div class="container">
+                    <div class="thank-you-content">
+                        <div class="thank-you-icon">✨</div>
+                        <h2>Thank You for Your Inquiry!</h2>
+                        <p>We've received your information and are excited to learn about your special event. We'll review your details and get back to you within 24 hours with a personalized proposal.</p>
+
+                        <div class="next-steps">
+                            <h3>What happens next?</h3>
+                            <ul>
+                                <li>We'll review your event details and requirements</li>
+                                <li>Prepare a customized photography package for you</li>
+                                <li>Schedule a consultation call to discuss your vision</li>
+                                <li>Send you a detailed proposal with pricing</li>
+                            </ul>
+                        </div>
+
+                        <div class="contact-info">
+                            <p><strong>Need to reach us immediately?</strong></p>
+                            <p>Email: hello@capturedmoments.com</p>
+                            <p>Phone: +91 98765 43210</p>
+                        </div>
+
+                        <button type="button" class="btn btn-secondary" onclick="location.reload()">Submit Another Inquiry</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
